@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Umesh Solanki - Resume</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
         * {
             margin: 0;
             padding: 0;
@@ -12,81 +14,175 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f5f5f5;
+            font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+            color: #2d3748;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e8ecf1 100%);
+            padding: 20px 0;
         }
 
         .container {
-            max-width: 900px;
+            max-width: 1000px;
             margin: 0 auto;
             background-color: #ffffff;
-            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
         }
 
         header {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            padding: 40px 30px;
+            padding: 50px 40px;
             text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            animation: pulse 15s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 0.5; }
+            50% { transform: scale(1.1); opacity: 0.8; }
         }
 
         header h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-            font-weight: 300;
+            font-size: 2.8em;
+            margin-bottom: 12px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            position: relative;
+            z-index: 1;
         }
 
         header .subtitle {
-            font-size: 1.2em;
-            opacity: 0.9;
-            margin-bottom: 20px;
+            font-size: 1.3em;
+            opacity: 0.95;
+            margin-bottom: 30px;
+            font-weight: 400;
+            letter-spacing: 0.5px;
+            position: relative;
+            z-index: 1;
         }
 
         .contact-info {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            gap: 20px;
-            margin-top: 20px;
+            gap: 25px;
+            margin-top: 25px;
             font-size: 0.95em;
+            position: relative;
+            z-index: 1;
+        }
+
+        .contact-info a {
+            text-decoration: none;
+            color: inherit;
         }
 
         .contact-info span {
             display: flex;
             align-items: center;
-            gap: 5px;
+            gap: 8px;
+            padding: 8px 16px;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .contact-info a:hover span,
+        .contact-info span:hover {
+            background: rgba(255, 255, 255, 0.25);
+            transform: translateY(-2px);
         }
 
         .content {
-            padding: 40px 30px;
+            padding: 50px 40px;
         }
 
         section {
-            margin-bottom: 35px;
+            margin-bottom: 45px;
+        }
+
+        section:last-child {
+            margin-bottom: 0;
         }
 
         section h2 {
             color: #667eea;
-            font-size: 1.8em;
-            margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 2px solid #667eea;
-            font-weight: 400;
+            font-size: 1.9em;
+            margin-bottom: 25px;
+            padding-bottom: 12px;
+            border-bottom: 3px solid #667eea;
+            font-weight: 600;
+            letter-spacing: -0.3px;
+            position: relative;
+        }
+
+        section h2::after {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(90deg, #764ba2, transparent);
         }
 
         .summary {
-            font-size: 1.1em;
-            line-height: 1.8;
-            color: #555;
+            font-size: 1.05em;
+            line-height: 1.9;
+            color: #4a5568;
+            background: #f7fafc;
+            padding: 25px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+
+        .summary p {
+            margin: 0;
         }
 
         .experience-item, .education-item {
-            margin-bottom: 25px;
-            padding-left: 20px;
-            border-left: 3px solid #667eea;
-            padding-bottom: 20px;
+            margin-bottom: 30px;
+            padding: 25px;
+            padding-left: 30px;
+            border-left: 4px solid #667eea;
+            background: #fafbfc;
+            border-radius: 0 8px 8px 0;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .experience-item:hover, .education-item:hover {
+            background: #f7fafc;
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.1);
+            transform: translateX(5px);
+        }
+
+        .experience-item::before {
+            content: '';
+            position: absolute;
+            left: -8px;
+            top: 30px;
+            width: 12px;
+            height: 12px;
+            background: #667eea;
+            border-radius: 50%;
+            border: 3px solid #ffffff;
+            box-shadow: 0 0 0 3px #667eea;
         }
 
         .item-header {
@@ -94,60 +190,83 @@
             justify-content: space-between;
             align-items: flex-start;
             flex-wrap: wrap;
-            margin-bottom: 10px;
+            margin-bottom: 12px;
+            gap: 15px;
         }
 
         .item-title {
-            font-size: 1.3em;
+            font-size: 1.35em;
             font-weight: 600;
-            color: #333;
-            margin-bottom: 5px;
+            color: #1a202c;
+            margin-bottom: 6px;
+            letter-spacing: -0.2px;
         }
 
         .item-company, .item-institution {
-            font-size: 1.1em;
+            font-size: 1.05em;
             color: #667eea;
             font-weight: 500;
         }
 
         .item-date {
-            color: #777;
-            font-size: 0.95em;
-            font-style: italic;
+            color: #718096;
+            font-size: 0.9em;
+            font-weight: 500;
+            white-space: nowrap;
+            padding: 6px 12px;
+            background: #edf2f7;
+            border-radius: 15px;
         }
 
         .item-description {
-            margin-top: 10px;
-            color: #555;
-            line-height: 1.7;
+            margin-top: 15px;
+            color: #4a5568;
+            line-height: 1.8;
         }
 
         .item-description ul {
-            margin-left: 20px;
-            margin-top: 8px;
+            margin-left: 22px;
+            margin-top: 10px;
         }
 
         .item-description li {
-            margin-bottom: 5px;
+            margin-bottom: 8px;
+            position: relative;
+            padding-left: 5px;
+        }
+
+        .item-description li::marker {
+            color: #667eea;
+            font-weight: bold;
         }
 
         .skills-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
             gap: 20px;
         }
 
         .skill-category {
-            background-color: #f8f9fa;
-            padding: 15px;
-            border-radius: 5px;
+            background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #e2e8f0;
+            transition: all 0.3s ease;
+        }
+
+        .skill-category:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.15);
+            border-color: #667eea;
         }
 
         .skill-category h3 {
             color: #667eea;
-            font-size: 1.1em;
-            margin-bottom: 10px;
+            font-size: 1.15em;
+            margin-bottom: 15px;
             font-weight: 600;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e2e8f0;
         }
 
         .skill-list {
@@ -155,43 +274,99 @@
         }
 
         .skill-list li {
-            padding: 5px 0;
-            color: #555;
+            padding: 8px 0;
+            color: #4a5568;
+            font-weight: 400;
+            transition: all 0.2s ease;
+        }
+
+        .skill-list li:hover {
+            color: #667eea;
+            padding-left: 5px;
         }
 
         .skill-list li:before {
             content: "▸ ";
             color: #667eea;
             font-weight: bold;
+            margin-right: 5px;
         }
 
         @media print {
             body {
-                background-color: white;
+                background: white;
+                padding: 0;
             }
             .container {
                 box-shadow: none;
+                border-radius: 0;
             }
             header {
-                background: #667eea;
+                background: #667eea !important;
                 -webkit-print-color-adjust: exact;
                 print-color-adjust: exact;
+            }
+            header::before {
+                display: none;
+            }
+            .experience-item:hover, .education-item:hover, .skill-category:hover {
+                transform: none;
+                box-shadow: none;
+            }
+            .contact-info span:hover {
+                transform: none;
+            }
+            section {
+                page-break-inside: avoid;
             }
         }
 
         @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            header {
+                padding: 35px 25px;
+            }
             header h1 {
-                font-size: 2em;
+                font-size: 2.2em;
+            }
+            header .subtitle {
+                font-size: 1.1em;
+            }
+            .content {
+                padding: 35px 25px;
             }
             .contact-info {
                 flex-direction: column;
-                gap: 10px;
+                gap: 12px;
+            }
+            .contact-info span {
+                justify-content: center;
             }
             .item-header {
                 flex-direction: column;
             }
             .item-date {
-                margin-top: 5px;
+                align-self: flex-start;
+            }
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+            .experience-item, .education-item {
+                padding-left: 25px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+            section h2 {
+                font-size: 1.5em;
+            }
+            .item-title {
+                font-size: 1.2em;
             }
         }
     </style>
@@ -202,11 +377,11 @@
             <h1>Umesh Solanki</h1>
             <div class="subtitle">Android Developer | 6+ Years Experience</div>
             <div class="contact-info">
-                <span>📧 umeshsolankie@gmail.com</span>
-                <span>📱 +91 - 8650266361</span>
-                <span>🌐 www.umeshsolanki.in</span>
+                <a href="mailto:umeshsolankie@gmail.com"><span>📧 umeshsolankie@gmail.com</span></a>
+                <a href="tel:+918650266361"><span>📱 +91 - 8650266361</span></a>
+                <a href="https://www.umeshsolanki.in" target="_blank"><span>🌐 www.umeshsolanki.in</span></a>
                 <span>📍 Mathura, Uttar Pradesh</span>
-                <span>💼 GitHub: /umeshsolanki</span>
+                <a href="https://github.com/umeshsolanki" target="_blank"><span>💼 GitHub: /umeshsolanki</span></a>
             </div>
         </header>
 
@@ -470,7 +645,7 @@
                     </div>
                     <div class="item-description">
                         <p>Configure Hosting, Bandwidth, Domains, Mail server, Web Servers, Files, Name Server (Bind9), Users. 
-                        Visit https://viatusk.com</p>
+                        Visit <a href="https://viatusk.com" target="_blank" style="color: #667eea; text-decoration: none; font-weight: 500;">https://viatusk.com</a></p>
                     </div>
                 </div>
             </section>
