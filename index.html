@@ -364,25 +364,30 @@
             }
             header {
                 background: #667eea !important;
-                padding: 15px 20px;
+                padding: 8px 15px;
                 -webkit-print-color-adjust: exact;
                 print-color-adjust: exact;
+                page-break-inside: avoid;
             }
             header h1 {
-                font-size: 1.8em;
-                margin-bottom: 4px;
+                font-size: 1.4em;
+                margin-bottom: 2px;
+                line-height: 1.2;
             }
             header .subtitle {
-                font-size: 0.95em;
-                margin-bottom: 8px;
+                font-size: 0.85em;
+                margin-bottom: 4px;
+                line-height: 1.2;
             }
             .contact-info {
-                gap: 6px;
-                font-size: 0.75em;
-                margin-top: 6px;
+                gap: 4px;
+                font-size: 0.7em;
+                margin-top: 4px;
+                flex-wrap: wrap;
             }
             .contact-info span {
-                padding: 3px 8px;
+                padding: 2px 6px;
+                font-size: 0.9em;
             }
             header::before {
                 display: none;
