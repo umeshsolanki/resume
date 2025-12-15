@@ -15,14 +15,14 @@
 
         body {
             font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.7;
+            line-height: 1.6;
             color: #2d3748;
             background: linear-gradient(135deg, #f5f7fa 0%, #e8ecf1 100%);
-            padding: 20px 0;
+            padding: 15px 0;
         }
 
         .container {
-            max-width: 1000px;
+            max-width: 1100px;
             margin: 0 auto;
             background-color: #ffffff;
             box-shadow: 0 10px 40px rgba(0,0,0,0.1);
@@ -33,7 +33,7 @@
         header {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            padding: 50px 40px;
+            padding: 30px 35px;
             text-align: center;
             position: relative;
             overflow: hidden;
@@ -56,8 +56,8 @@
         }
 
         header h1 {
-            font-size: 2.8em;
-            margin-bottom: 12px;
+            font-size: 2.4em;
+            margin-bottom: 8px;
             font-weight: 700;
             letter-spacing: -0.5px;
             position: relative;
@@ -65,11 +65,10 @@
         }
 
         header .subtitle {
-            font-size: 1.3em;
+            font-size: 1.15em;
             opacity: 0.95;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
             font-weight: 400;
-            letter-spacing: 0.5px;
             position: relative;
             z-index: 1;
         }
@@ -78,9 +77,9 @@
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            gap: 25px;
-            margin-top: 25px;
-            font-size: 0.95em;
+            gap: 15px;
+            margin-top: 15px;
+            font-size: 0.9em;
             position: relative;
             z-index: 1;
         }
@@ -93,10 +92,10 @@
         .contact-info span {
             display: flex;
             align-items: center;
-            gap: 8px;
-            padding: 8px 16px;
+            gap: 6px;
+            padding: 6px 14px;
             background: rgba(255, 255, 255, 0.15);
-            border-radius: 20px;
+            border-radius: 18px;
             backdrop-filter: blur(10px);
             transition: all 0.3s ease;
             cursor: pointer;
@@ -109,22 +108,21 @@
         }
 
         .content {
-            padding: 50px 40px;
+            padding: 30px 35px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 25px;
         }
 
         section {
-            margin-bottom: 45px;
-        }
-
-        section:last-child {
             margin-bottom: 0;
         }
 
         section h2 {
             color: #667eea;
-            font-size: 1.9em;
-            margin-bottom: 25px;
-            padding-bottom: 12px;
+            font-size: 1.6em;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
             border-bottom: 3px solid #667eea;
             font-weight: 600;
             letter-spacing: -0.3px;
@@ -136,18 +134,18 @@
             position: absolute;
             bottom: -3px;
             left: 0;
-            width: 60px;
+            width: 50px;
             height: 3px;
             background: linear-gradient(90deg, #764ba2, transparent);
         }
 
         .summary {
-            font-size: 1.05em;
-            line-height: 1.9;
+            font-size: 0.95em;
+            line-height: 1.7;
             color: #4a5568;
             background: #f7fafc;
-            padding: 25px;
-            border-radius: 8px;
+            padding: 18px;
+            border-radius: 6px;
             border-left: 4px solid #667eea;
         }
 
@@ -155,34 +153,39 @@
             margin: 0;
         }
 
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+        }
+
         .experience-item, .education-item {
-            margin-bottom: 30px;
-            padding: 25px;
-            padding-left: 30px;
-            border-left: 4px solid #667eea;
+            margin-bottom: 18px;
+            padding: 18px;
+            padding-left: 22px;
+            border-left: 3px solid #667eea;
             background: #fafbfc;
-            border-radius: 0 8px 8px 0;
+            border-radius: 0 6px 6px 0;
             transition: all 0.3s ease;
             position: relative;
         }
 
         .experience-item:hover, .education-item:hover {
             background: #f7fafc;
-            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.1);
-            transform: translateX(5px);
+            box-shadow: 0 2px 8px rgba(102, 126, 234, 0.1);
+            transform: translateX(3px);
         }
 
         .experience-item::before {
             content: '';
             position: absolute;
-            left: -8px;
-            top: 30px;
-            width: 12px;
-            height: 12px;
+            left: -7px;
+            top: 22px;
+            width: 10px;
+            height: 10px;
             background: #667eea;
             border-radius: 50%;
-            border: 3px solid #ffffff;
-            box-shadow: 0 0 0 3px #667eea;
+            border: 2px solid #ffffff;
         }
 
         .item-header {
@@ -190,49 +193,48 @@
             justify-content: space-between;
             align-items: flex-start;
             flex-wrap: wrap;
-            margin-bottom: 12px;
-            gap: 15px;
+            margin-bottom: 8px;
+            gap: 10px;
         }
 
         .item-title {
-            font-size: 1.35em;
+            font-size: 1.15em;
             font-weight: 600;
             color: #1a202c;
-            margin-bottom: 6px;
+            margin-bottom: 4px;
             letter-spacing: -0.2px;
         }
 
         .item-company, .item-institution {
-            font-size: 1.05em;
+            font-size: 0.95em;
             color: #667eea;
             font-weight: 500;
         }
 
         .item-date {
             color: #718096;
-            font-size: 0.9em;
+            font-size: 0.85em;
             font-weight: 500;
             white-space: nowrap;
-            padding: 6px 12px;
+            padding: 4px 10px;
             background: #edf2f7;
-            border-radius: 15px;
+            border-radius: 12px;
         }
 
         .item-description {
-            margin-top: 15px;
+            margin-top: 10px;
             color: #4a5568;
-            line-height: 1.8;
+            line-height: 1.65;
+            font-size: 0.9em;
         }
 
         .item-description ul {
-            margin-left: 22px;
-            margin-top: 10px;
+            margin-left: 18px;
+            margin-top: 6px;
         }
 
         .item-description li {
-            margin-bottom: 8px;
-            position: relative;
-            padding-left: 5px;
+            margin-bottom: 5px;
         }
 
         .item-description li::marker {
@@ -240,56 +242,98 @@
             font-weight: bold;
         }
 
+        .item-description p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+
         .skills-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
         }
 
         .skill-category {
             background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
-            padding: 20px;
-            border-radius: 10px;
+            padding: 15px;
+            border-radius: 8px;
             border: 1px solid #e2e8f0;
             transition: all 0.3s ease;
         }
 
         .skill-category:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.15);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.1);
             border-color: #667eea;
         }
 
         .skill-category h3 {
             color: #667eea;
-            font-size: 1.15em;
-            margin-bottom: 15px;
+            font-size: 1em;
+            margin-bottom: 10px;
             font-weight: 600;
-            padding-bottom: 10px;
+            padding-bottom: 8px;
             border-bottom: 2px solid #e2e8f0;
         }
 
         .skill-list {
             list-style: none;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5px 15px;
         }
 
         .skill-list li {
-            padding: 8px 0;
+            padding: 4px 0;
             color: #4a5568;
             font-weight: 400;
+            font-size: 0.9em;
             transition: all 0.2s ease;
         }
 
         .skill-list li:hover {
             color: #667eea;
-            padding-left: 5px;
+            padding-left: 3px;
         }
 
         .skill-list li:before {
             content: "▸ ";
             color: #667eea;
             font-weight: bold;
-            margin-right: 5px;
+            margin-right: 4px;
+        }
+
+        .compact-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+        }
+
+        .compact-item {
+            padding: 12px 15px;
+            background: #fafbfc;
+            border-radius: 6px;
+            border-left: 3px solid #667eea;
+            transition: all 0.2s ease;
+        }
+
+        .compact-item:hover {
+            background: #f7fafc;
+            transform: translateX(2px);
+        }
+
+        .compact-item .item-title {
+            font-size: 1em;
+            margin-bottom: 3px;
+        }
+
+        .compact-item .item-company {
+            font-size: 0.85em;
+        }
+
+        .compact-item .item-date {
+            font-size: 0.8em;
+            padding: 3px 8px;
         }
 
         @media print {
@@ -303,13 +347,17 @@
             }
             header {
                 background: #667eea !important;
+                padding: 25px 30px;
                 -webkit-print-color-adjust: exact;
                 print-color-adjust: exact;
             }
             header::before {
                 display: none;
             }
-            .experience-item:hover, .education-item:hover, .skill-category:hover {
+            .content {
+                padding: 25px 30px;
+            }
+            .experience-item:hover, .education-item:hover, .skill-category:hover, .compact-item:hover {
                 transform: none;
                 box-shadow: none;
             }
@@ -319,6 +367,21 @@
             section {
                 page-break-inside: avoid;
             }
+            .two-column, .compact-grid, .skills-grid {
+                break-inside: avoid;
+            }
+        }
+
+        @media (max-width: 968px) {
+            .two-column, .compact-grid {
+                grid-template-columns: 1fr;
+            }
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+            .skill-list {
+                grid-template-columns: 1fr;
+            }
         }
 
         @media (max-width: 768px) {
@@ -326,20 +389,21 @@
                 padding: 10px;
             }
             header {
-                padding: 35px 25px;
+                padding: 25px 20px;
             }
             header h1 {
-                font-size: 2.2em;
+                font-size: 2em;
             }
             header .subtitle {
-                font-size: 1.1em;
+                font-size: 1em;
             }
             .content {
-                padding: 35px 25px;
+                padding: 25px 20px;
+                gap: 20px;
             }
             .contact-info {
                 flex-direction: column;
-                gap: 12px;
+                gap: 10px;
             }
             .contact-info span {
                 justify-content: center;
@@ -350,23 +414,20 @@
             .item-date {
                 align-self: flex-start;
             }
-            .skills-grid {
-                grid-template-columns: 1fr;
-            }
             .experience-item, .education-item {
-                padding-left: 25px;
+                padding-left: 18px;
             }
         }
 
         @media (max-width: 480px) {
             header h1 {
-                font-size: 1.8em;
+                font-size: 1.7em;
             }
             section h2 {
-                font-size: 1.5em;
+                font-size: 1.4em;
             }
             .item-title {
-                font-size: 1.2em;
+                font-size: 1.05em;
             }
         }
     </style>
@@ -494,270 +555,269 @@
                 </div>
             </section>
 
-            <section id="education">
-                <h2>Education</h2>
-                
-                <div class="education-item">
-                    <div class="item-header">
-                        <div>
-                            <div class="item-title">B.Tech - Computer Science and Engineering</div>
-                            <div class="item-institution">Dr. APJ Abdul Kalam Technical University (AKTU), Noida</div>
+            <div class="two-column">
+                <section id="education">
+                    <h2>Education</h2>
+                    <div class="education-item">
+                        <div class="item-header">
+                            <div>
+                                <div class="item-title">B.Tech - Computer Science and Engineering</div>
+                                <div class="item-institution">Dr. APJ Abdul Kalam Technical University (AKTU), Noida</div>
+                            </div>
+                            <div class="item-date">2013 - 2017</div>
                         </div>
-                        <div class="item-date">2013 - 2017</div>
+                        <div class="item-description">
+                            <p>Aggregate: 70%</p>
+                        </div>
                     </div>
-                    <div class="item-description">
-                        <p>Aggregate: 70%</p>
-                    </div>
-                </div>
-            </section>
+                </section>
 
-            <section id="skills">
-                <h2>Skills</h2>
-                <div class="skills-grid">
-                    <div class="skill-category">
-                        <h3>Programming Languages</h3>
-                        <ul class="skill-list">
-                            <li>Kotlin (3+ years)</li>
-                            <li>Java</li>
-                            <li>JavaScript</li>
-                            <li>SQL</li>
-                        </ul>
+                <section id="skills">
+                    <h2>Skills</h2>
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h3>Programming</h3>
+                            <ul class="skill-list">
+                                <li>Kotlin (3+ years)</li>
+                                <li>Java</li>
+                                <li>JavaScript</li>
+                                <li>SQL</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Android</h3>
+                            <ul class="skill-list">
+                                <li>Android SDK</li>
+                                <li>Room Database</li>
+                                <li>MVVM</li>
+                                <li>Dagger2 & Hilt</li>
+                                <li>Jetpack</li>
+                                <li>Coroutines & Flow</li>
+                                <li>Navigation</li>
+                                <li>DataBinding</li>
+                                <li>Compose</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Backend & Tools</h3>
+                            <ul class="skill-list">
+                                <li>Spring</li>
+                                <li>Hibernate</li>
+                                <li>MySQL & MongoDB</li>
+                                <li>Firebase</li>
+                                <li>Git</li>
+                                <li>AWS S3 & IoT</li>
+                                <li>MQTT</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Languages</h3>
+                            <ul class="skill-list">
+                                <li>Hindi</li>
+                                <li>Sanskrit</li>
+                                <li>English</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="skill-category">
-                        <h3>Android Technologies</h3>
-                        <ul class="skill-list">
-                            <li>Android SDK</li>
-                            <li>Room Database</li>
-                            <li>MVVM Architecture</li>
-                            <li>Dagger2 & Hilt</li>
-                            <li>Jetpack Components</li>
-                            <li>Coroutines & Flow</li>
-                            <li>Navigation Graph</li>
-                            <li>DataBinding</li>
-                            <li>Compose</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Backend & Tools</h3>
-                        <ul class="skill-list">
-                            <li>Spring Framework</li>
-                            <li>Hibernate</li>
-                            <li>MySQL & MongoDB</li>
-                            <li>Firebase</li>
-                            <li>Git</li>
-                            <li>AWS S3 & IoT</li>
-                            <li>MQTT</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Languages</h3>
-                        <ul class="skill-list">
-                            <li>Hindi</li>
-                            <li>Sanskrit</li>
-                            <li>English</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
+                </section>
+            </div>
 
             <section id="projects">
                 <h2>Notable Projects</h2>
-                
-                <div class="experience-item">
-                    <div class="item-header">
-                        <div>
-                            <div class="item-title">Albertsons, Safeway, ACME, Star Market, Tom Thumb Apps</div>
-                            <div class="item-company">Android, Kotlin, MVVM, Room</div>
+                <div class="compact-grid">
+                    <div class="compact-item">
+                        <div class="item-header">
+                            <div>
+                                <div class="item-title">Albertsons, Safeway Apps</div>
+                                <div class="item-company">Android, Kotlin, MVVM, Room</div>
+                            </div>
+                            <div class="item-date">2020-2021</div>
                         </div>
-                        <div class="item-date">2020-2021</div>
+                        <div class="item-description">
+                            <p>Deals and Rewards Android App and Delivery & Pickup App for major retail chains.</p>
+                        </div>
                     </div>
-                    <div class="item-description">
-                        <p>Developed Deals and Rewards Android App and Delivery & Pickup Android App for major retail chains.</p>
-                    </div>
-                </div>
 
-                <div class="experience-item">
-                    <div class="item-header">
-                        <div>
-                            <div class="item-title">E-Voting System</div>
-                            <div class="item-company">Android, Java</div>
+                    <div class="compact-item">
+                        <div class="item-header">
+                            <div>
+                                <div class="item-title">E-Voting System</div>
+                                <div class="item-company">Android, Java</div>
+                            </div>
+                            <div class="item-date">2016</div>
                         </div>
-                        <div class="item-date">2016</div>
+                        <div class="item-description">
+                            <p>Digital election system tested with 10,000 voters. Featured in Times of India, Zee News. Received INR 21,000 reward.</p>
+                        </div>
                     </div>
-                    <div class="item-description">
-                        <p>Developed in second year based on digital election concept. No limitation on number of candidates unlike existing EVMs. 
-                        Tested successfully with 400 voters and then 10,000 voters. Featured in Times of India, Zee News, DAINIK JAGRAN, ANI, 
-                        and Documentary at IBN 7. Received INR 21,000 reward and Young Innovators Award.</p>
-                    </div>
-                </div>
 
-                <div class="experience-item">
-                    <div class="item-header">
-                        <div>
-                            <div class="item-title">ERP for Multi-Branches Company</div>
-                            <div class="item-company">Java, Spring, Hibernate, MySQL</div>
+                    <div class="compact-item">
+                        <div class="item-header">
+                            <div>
+                                <div class="item-title">ERP System</div>
+                                <div class="item-company">Java, Spring, Hibernate, MySQL</div>
+                            </div>
+                            <div class="item-date">2017-2019</div>
                         </div>
-                        <div class="item-date">2017-2019</div>
+                        <div class="item-description">
+                            <p>Comprehensive ERP with 20+ modules including Production, CRM, Inventory Management, Payment gateway integration.</p>
+                        </div>
                     </div>
-                    <div class="item-description">
-                        <p>Developed comprehensive ERP system with 20+ modules including Production Management, CRM, Inventory Management, 
-                        Orders & Complaints Management, Warranty and Return Module, Requisition Module, Sellers Management, and Individual 
-                        branch management. Integrated Payment gateway and CMS for website.</p>
-                    </div>
-                </div>
 
-                <div class="experience-item">
-                    <div class="item-header">
-                        <div>
-                            <div class="item-title">PC Controller</div>
-                            <div class="item-company">Android, Java, UDP & TCP Sockets, AWT Toolkit</div>
+                    <div class="compact-item">
+                        <div class="item-header">
+                            <div>
+                                <div class="item-title">PC Controller</div>
+                                <div class="item-company">Android, Java, Sockets</div>
+                            </div>
+                            <div class="item-date">2017</div>
                         </div>
-                        <div class="item-date">2017</div>
+                        <div class="item-description">
+                            <p>Android App to control PC remotely. 25,000+ Downloads, 4.6 rating. Features file sharing, wireless mouse/keyboard.</p>
+                        </div>
                     </div>
-                    <div class="item-description">
-                        <p>Android App to control PC or Laptop with Remote Access. Features include PC-Mobile File sharing (Full Drives Access), 
-                        Use android as Wireless Mouse and Keyboard, Mobile-Mobile File sharing. Updated to version 7.6. Downloaded worldwide 
-                        (India, USA, UK, Bolivia, Iran, Canada, Germany, South Africa). Average Ratings 4.6, 25,000+ Downloads.</p>
-                    </div>
-                </div>
 
-                <div class="experience-item">
-                    <div class="item-header">
-                        <div>
-                            <div class="item-title">Udyog Mitra</div>
-                            <div class="item-company">Android, Java, Servlets</div>
+                    <div class="compact-item">
+                        <div class="item-header">
+                            <div>
+                                <div class="item-title">Udyog Mitra</div>
+                                <div class="item-company">Android, Java, Servlets</div>
+                            </div>
+                            <div class="item-date">2017</div>
                         </div>
-                        <div class="item-date">2017</div>
+                        <div class="item-description">
+                            <p>App for National Chamber of Commerce, Mathura. Launched by Hon. Minister of Power. Received award.</p>
+                        </div>
                     </div>
-                    <div class="item-description">
-                        <p>Android App developed for National Chamber of Commerce and Industries Association, Mathura. 
-                        Launched by Hon. Minister of Power Mr. Shrikant Sharma. Received award for development of this Application.</p>
-                    </div>
-                </div>
 
-                <div class="experience-item">
-                    <div class="item-header">
-                        <div>
-                            <div class="item-title">Web-based Server Administration Tool</div>
-                            <div class="item-company">HTML, CSS, Javascript, Server Administration</div>
+                    <div class="compact-item">
+                        <div class="item-header">
+                            <div>
+                                <div class="item-title">Server Admin Tool</div>
+                                <div class="item-company">HTML, CSS, Javascript</div>
+                            </div>
+                            <div class="item-date">2017-2019</div>
                         </div>
-                        <div class="item-date">2017-2019</div>
-                    </div>
-                    <div class="item-description">
-                        <p>Configure Hosting, Bandwidth, Domains, Mail server, Web Servers, Files, Name Server (Bind9), Users. 
-                        Visit <a href="https://viatusk.com" target="_blank" style="color: #667eea; text-decoration: none; font-weight: 500;">https://viatusk.com</a></p>
+                        <div class="item-description">
+                            <p>Web-based tool for hosting, bandwidth, domains, mail server, web servers configuration. Visit <a href="https://viatusk.com" target="_blank" style="color: #667eea; text-decoration: none; font-weight: 500;">viatusk.com</a></p>
+                        </div>
                     </div>
                 </div>
             </section>
 
-            <section id="awards">
-                <h2>Awards & Recognition</h2>
-                <div class="experience-item">
-                    <div class="item-header">
-                        <div>
-                            <div class="item-title">Go Tripper of Month</div>
-                            <div class="item-company">MMT (Make My Trip)</div>
+            <div class="two-column">
+                <section id="awards">
+                    <h2>Awards & Recognition</h2>
+                    <div class="compact-grid">
+                        <div class="compact-item">
+                            <div class="item-header">
+                                <div>
+                                    <div class="item-title">Go Tripper of Month</div>
+                                    <div class="item-company">MMT</div>
+                                </div>
+                                <div class="item-date">2023</div>
+                            </div>
                         </div>
-                        <div class="item-date">2023</div>
-                    </div>
-                </div>
-                <div class="experience-item">
-                    <div class="item-header">
-                        <div>
-                            <div class="item-title">Get Things Done Award</div>
-                            <div class="item-company">DTDL (Deutsche Telekom)</div>
+                        <div class="compact-item">
+                            <div class="item-header">
+                                <div>
+                                    <div class="item-title">Get Things Done Award</div>
+                                    <div class="item-company">DTDL</div>
+                                </div>
+                                <div class="item-date">2021</div>
+                            </div>
                         </div>
-                        <div class="item-date">2021</div>
-                    </div>
-                </div>
-                <div class="experience-item">
-                    <div class="item-header">
-                        <div>
-                            <div class="item-title">Excellence Delivery Award</div>
-                            <div class="item-company">Sasken Technologies</div>
+                        <div class="compact-item">
+                            <div class="item-header">
+                                <div>
+                                    <div class="item-title">Excellence Delivery Award</div>
+                                    <div class="item-company">Sasken</div>
+                                </div>
+                                <div class="item-date">2019</div>
+                            </div>
                         </div>
-                        <div class="item-date">2019</div>
-                    </div>
-                </div>
-                <div class="experience-item">
-                    <div class="item-header">
-                        <div>
-                            <div class="item-title">Award for Udyog Mitra App Development</div>
-                            <div class="item-company">Hon. Minister of Power of Uttar Pradesh, Mr. Shrikant Sharma</div>
+                        <div class="compact-item">
+                            <div class="item-header">
+                                <div>
+                                    <div class="item-title">Udyog Mitra Award</div>
+                                    <div class="item-company">Hon. Minister UP</div>
+                                </div>
+                                <div class="item-date">2017</div>
+                            </div>
                         </div>
-                        <div class="item-date">2017</div>
-                    </div>
-                </div>
-                <div class="experience-item">
-                    <div class="item-header">
-                        <div>
-                            <div class="item-title">Young Innovators Award & INR 21,000 Reward</div>
-                            <div class="item-company">BSA College for E-Voting Project</div>
+                        <div class="compact-item">
+                            <div class="item-header">
+                                <div>
+                                    <div class="item-title">Young Innovators Award</div>
+                                    <div class="item-company">BSA College</div>
+                                </div>
+                                <div class="item-date">2016</div>
+                            </div>
                         </div>
-                        <div class="item-date">2016</div>
                     </div>
-                </div>
-            </section>
+                </section>
 
-            <section id="certifications">
-                <h2>Workshops & Certifications</h2>
-                <div class="experience-item">
-                    <div class="item-header">
-                        <div>
-                            <div class="item-title">Apple Developer Machine Learning Workshop</div>
-                            <div class="item-company">Bangalore</div>
+                <section id="certifications">
+                    <h2>Workshops & Certifications</h2>
+                    <div class="compact-grid">
+                        <div class="compact-item">
+                            <div class="item-header">
+                                <div>
+                                    <div class="item-title">Apple ML Workshop</div>
+                                    <div class="item-company">Bangalore</div>
+                                </div>
+                                <div class="item-date">2019</div>
+                            </div>
                         </div>
-                        <div class="item-date">2019</div>
-                    </div>
-                </div>
-                <div class="experience-item">
-                    <div class="item-header">
-                        <div>
-                            <div class="item-title">Google App Excellence Summit</div>
-                            <div class="item-company">Bangalore</div>
+                        <div class="compact-item">
+                            <div class="item-header">
+                                <div>
+                                    <div class="item-title">Google App Summit</div>
+                                    <div class="item-company">Bangalore</div>
+                                </div>
+                                <div class="item-date">2017</div>
+                            </div>
                         </div>
-                        <div class="item-date">2017</div>
-                    </div>
-                </div>
-                <div class="experience-item">
-                    <div class="item-header">
-                        <div>
-                            <div class="item-title">Intern at Microsoft Technology Associate</div>
-                            <div class="item-company">Java Technology and Android Application Development, Noida</div>
+                        <div class="compact-item">
+                            <div class="item-header">
+                                <div>
+                                    <div class="item-title">MTA Internship</div>
+                                    <div class="item-company">Java & Android</div>
+                                </div>
+                                <div class="item-date">2014-2016</div>
+                            </div>
                         </div>
-                        <div class="item-date">2014-2016</div>
-                    </div>
-                </div>
-                <div class="experience-item">
-                    <div class="item-header">
-                        <div>
-                            <div class="item-title">Spring + Hibernate Framework + Android Internship</div>
-                            <div class="item-company">Microsoft Technology Associate</div>
+                        <div class="compact-item">
+                            <div class="item-header">
+                                <div>
+                                    <div class="item-title">Spring + Hibernate</div>
+                                    <div class="item-company">MTA</div>
+                                </div>
+                                <div class="item-date">2016</div>
+                            </div>
                         </div>
-                        <div class="item-date">2016</div>
-                    </div>
-                </div>
-                <div class="experience-item">
-                    <div class="item-header">
-                        <div>
-                            <div class="item-title">Core + Advance Java</div>
-                            <div class="item-company">Microsoft Technology Associate</div>
+                        <div class="compact-item">
+                            <div class="item-header">
+                                <div>
+                                    <div class="item-title">Core + Advance Java</div>
+                                    <div class="item-company">MTA</div>
+                                </div>
+                                <div class="item-date">2014</div>
+                            </div>
                         </div>
-                        <div class="item-date">2014</div>
-                    </div>
-                </div>
-                <div class="experience-item">
-                    <div class="item-header">
-                        <div>
-                            <div class="item-title">PHP Workshop</div>
-                            <div class="item-company">MG Websoft</div>
+                        <div class="compact-item">
+                            <div class="item-header">
+                                <div>
+                                    <div class="item-title">PHP Workshop</div>
+                                    <div class="item-company">MG Websoft</div>
+                                </div>
+                                <div class="item-date">2013</div>
+                            </div>
                         </div>
-                        <div class="item-date">2013</div>
                     </div>
-                </div>
-            </section>
+                </section>
+            </div>
         </div>
     </div>
 </body>
 </html>
-
