@@ -325,9 +325,14 @@
 
         .skills-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: 1fr 1fr;
+            grid-auto-rows: min-content;
             gap: 12px;
             align-items: start;
+        }
+        
+        .skill-category.android-dev {
+            grid-row: span 2;
         }
 
         .skill-category {
@@ -597,7 +602,10 @@
                 grid-template-columns: 1fr;
             }
             .skills-grid {
-                grid-template-columns: repeat(2, 1fr);
+                grid-template-columns: 1fr;
+            }
+            .skill-category.android-dev {
+                grid-row: span 1;
             }
             .skill-list {
                 gap: 6px;
@@ -1008,17 +1016,7 @@
             <section id="skills">
                     <h2>Skills</h2>
                     <div class="skills-grid">
-                        <div class="skill-category">
-                            <h3>Programming Languages</h3>
-                            <ul class="skill-list">
-                                <li>Kotlin (5+ years)</li>
-                                <li>Java</li>
-                                <li>Kotlin Multiplatform</li>
-                                <li>TypeScript</li>
-                                <li>SQL</li>
-                            </ul>
-                        </div>
-                        <div class="skill-category">
+                        <div class="skill-category android-dev">
                             <h3>Android Development</h3>
                             <ul class="skill-list">
                                 <li>Jetpack Compose</li>
@@ -1033,6 +1031,16 @@
                                 <li>Navigation Component</li>
                                 <li>KSP (Kotlin Symbol Processing)</li>
                                 <li>Baseline Profiles</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Programming Languages</h3>
+                            <ul class="skill-list">
+                                <li>Kotlin (5+ years)</li>
+                                <li>Java</li>
+                                <li>Kotlin Multiplatform</li>
+                                <li>TypeScript</li>
+                                <li>SQL</li>
                             </ul>
                         </div>
                         <div class="skill-category">
