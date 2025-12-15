@@ -325,8 +325,9 @@
 
         .skills-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 10px;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+            align-items: start;
         }
 
         .skill-category {
@@ -596,7 +597,7 @@
                 grid-template-columns: 1fr;
             }
             .skills-grid {
-                grid-template-columns: 1fr;
+                grid-template-columns: repeat(2, 1fr);
             }
             .skill-list {
                 gap: 6px;
