@@ -279,29 +279,34 @@
 
         .skill-list {
             list-style: none;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 3px 12px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin: 0;
+            padding: 0;
         }
 
         .skill-list li {
-            padding: 2px 0;
-            color: #4a5568;
-            font-weight: 400;
+            display: inline-flex;
+            align-items: center;
+            padding: 6px 12px;
+            background: #667eea;
+            color: white;
+            border-radius: 20px;
+            font-weight: 500;
             font-size: 0.85em;
             transition: all 0.2s ease;
+            white-space: nowrap;
         }
 
         .skill-list li:hover {
-            color: #667eea;
-            padding-left: 3px;
+            background: #764ba2;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(102, 126, 234, 0.3);
         }
 
         .skill-list li:before {
-            content: "▸ ";
-            color: #667eea;
-            font-weight: bold;
-            margin-right: 4px;
+            content: none;
         }
 
         .compact-grid {
@@ -426,9 +431,12 @@
                 font-size: 0.9em;
                 margin-bottom: 6px;
             }
+            .skill-list {
+                gap: 6px;
+            }
             .skill-list li {
-                font-size: 0.8em;
-                padding: 1px 0;
+                font-size: 0.75em;
+                padding: 4px 10px;
             }
             .compact-grid {
                 gap: 6px;
@@ -466,7 +474,7 @@
                 grid-template-columns: 1fr;
             }
             .skill-list {
-                grid-template-columns: 1fr;
+                gap: 6px;
             }
         }
 
@@ -553,8 +561,12 @@
             .skill-category h3 {
                 font-size: 0.95em;
             }
+            .skill-list {
+                gap: 6px;
+            }
             .skill-list li {
-                font-size: 0.88em;
+                font-size: 0.82em;
+                padding: 5px 10px;
             }
             .compact-grid {
                 gap: 10px;
@@ -660,11 +672,11 @@
                 margin-bottom: 8px;
             }
             .skill-list {
-                gap: 2px 10px;
+                gap: 6px;
             }
             .skill-list li {
-                font-size: 0.85em;
-                padding: 2px 0;
+                font-size: 0.8em;
+                padding: 5px 10px;
             }
             .compact-grid {
                 gap: 8px;
